@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+       <label for="">Name:</label> <input type="text" name="name" placeholder="Enter your name"><br>
+        <label for="">Contact:</label><input type="text" name="contact" placeholder="Enter your contact"><br>
+        <label for="">Remarks:</label><textarea name="Remarks" cols="15" rows="2" placeholder="Enter your Remarks"></textarea><br>
+
+        <label for="">Gender: </label>male<input type="radio" name="Gender" value="male">
+        female <input type="radio" name="Gender" value="female"><br>
+        <label for="">courses:</label>
+        <input type="checkbox" name="NT" value="NT" class="courses">NT
+        <input type="checkbox" name="IAD" value="IAD" class="courses">IAD
+        <input type="checkbox" name="DDD" value="DDD" class="courses">DDD
+        <input type="checkbox" name="ESAD" value="ESAD" class="courses">ESAD </BR>
+        <label for="">location:</label><select name="location" id="">
+            <option value="choose location">choose location</option>
+            <option value="banani">banani</option>
+            <option value="mirpur">mirpur</option>
+            <option value="dhanmondi">dhanmondi</option>
+        </select><br>
+        <input type="button" onclick="myfunction()" value="submit">
+        
+    </form>
+    <script>
+        function myfunction(){
+            let name = document.myform.name.value;
+            
+            let contact = document.myform.contact.value;
+            let Remarks = document.myform.Remarks.value
+            let Gender = document.myform.Gender.value;
+            let courese = document.myform.courese.value;
+            let location = document.myform.location.value;
+
+            alert(name);
+        }
+        
+    </script>
+</body>
+</html>
